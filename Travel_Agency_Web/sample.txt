@@ -1,0 +1,13 @@
+//kotlin
+fun main(){
+    var v:Int       //declaring the datatype
+    var v1=1
+    var v2=3        //derived from J
+    var v3=5
+    println(v1+v2)
+    println("the value of v1 is "+v1)
+    println("the value of v1 is $v1 ")
+}
+
+//statically typed language
+//variables are stored during compile time

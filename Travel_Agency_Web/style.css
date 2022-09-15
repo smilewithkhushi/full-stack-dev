@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    font-size: 20px;
+    align-items: center;
+}
+.container{
+    max-width: 100%;
+    padding: 10px;
+    background-color: purple;
+    margin: auto;
+    align-items: center;
+}
+.container h2, p{
+    text-align: center;
+}
+
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form{
+    align-items: center;
+}
+
+input, textarea{
+    border: 2px solid black;
+    outline: none;
+    align-self: center;
+    width: 50%;
+    height: 20%;
+    margin: 5px;
+    padding: 5px;
+}
+.btn{
+    padding: 10px;
+    margin: 10px;
+    height: 15%;
+    width: 10%;
+    color: aliceblue;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: brown;
+    cursor: pointer;
+}
+
+.pageBreak{
+    width: 100%;
+    position: absolute;
+    display: block;
+    opacity: 0.8;
+    height: 18%;
+    background-image: url(bg.jpg);
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    background-size:auto;
+
+}
+.submitMsg{
+    color: yellowgreen;
+    size: 20px;
+    font-family: monospace;
+
+}
+
+@media screen and (max-width: 800px) {
+    .container{
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    input,textarea{
+        width: 80%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    .btn{
+        width: 30%;
+    }
+  
+}
