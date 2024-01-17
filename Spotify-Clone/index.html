@@ -1,13 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify Clone</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- outer-most div representing the whole page -->
+    <div class="flex-auto flex-col align-middle max-w-100 bg-black text-white">
+      <!-- the centermost div representing the main content of the music -->
+      <div class="flex flex-row max-w-full">
+        <!-- left most navigation bar -->
+        <nav
+          class="max-w-full flex-auto flex-col md:w-20 bg-gray-900 p-2 min-h-full"
+        >
+          <!-- the navigation buttons -->
+          <ul class="flex flex-col justify-between">
+            <li class="flex flex-row items-center mx-6">
+              <img src="assets/home.png" class="w-8 mr-4 my-2" /> Home
+            </li>
+            <li class="flex flex-row items-center mx-6">
+              <img src="assets/search.png" class="w-8 mr-4 my-2" /> Search
+            </li>
+          </ul>
+
+          <!-- the playlists -->
+          <ul class="flex flex-col justify-between">
+            <li>
+              <img src="assets/library.png" class="w-8 m-4" /> Your Library
+            </li>
+
+            <ul>
+              <li>
+                <img src="assets/home.png" class="w-10 m-4" /> Liked Songs
+              </li>
+              <li>
+                <img src="assets/search.png" class="w-10 m-4" /> Playlist 1
+              </li>
+              <li><img src="assets/library.png" class="w-10 m-4" />Playlist</li>
+            </ul>
+          </ul>
+        </nav>
+
+        <!-- the center div containing all the songs -->
+        <div class="basis-3/4">
+          <!-- topmost message -->
+          <h1>Good Morning Khushi!</h1>
+        </div>
+      </div>
+
+      <!-- the music playbar in the bottom of the screen -->
+      <div class="max-w-full flex flex-row align-center flex-justify p-10">
+        <div class="flex flex-row">
+          <img src="assets/library.png" class="w-10" />
+
+          <!-- the name and image of song being played -->
+          <div class="flex flex-col mx-4">
+            <h1>Playlist 1</h1>
+            <h2>Khushi</h2>
+          </div>
+          <img src="" alt="heart" class="w-10" />
+        </div>
+
+        <!-- the playbar and the play buttons -->
+        <div class="flex flex-col mx-4">
+          <div class="flex flex-row">
+            <img src="assets/repeat.png" class="w-10" />
+
+            <img src="assets/previous.png" class="w-10" />
+            <img src="assets/play.png" class="w-10" />
+            <img src="assets/next.png" class="w-10" />
+
+            <img src="assets/shuffle.png" class="w-10" />
+          </div>
+          <img src="assets/seekbar.png" alt="seekbar" />
+        </div>
+
+        <!-- buttons for lyrics and volume -->
+
+        <h1>The music player lies here</h1>
+      </div>
+    </div>
+  </body>
 </html>
